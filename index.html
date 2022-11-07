@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hypotenuse Calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row fixed-top mt-5 text-center justify-content-around">
+            <div class="col-4">
+                <input type="text" name="triangleA" id="triangleA" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+                <div><label for="triangleA">Add Length of Side A</label></div>
+            </div>
+        <div class="col-4">
+            <input disabled type="text" placeholder="?" name="triangleC" id="triangleC" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+            <div><label for="triangleA">Solving for Side C</label></div>
+        </div>
+    </div>
+<div class="row mb-5 fixed-bottom text-center justify-content-center">
+        <div class="col-4">
+            <input  type="text" name="triangleB" id="triangleB" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+            <div><label for="triangleA">Add Length of Side B</label></div>
+        </div>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

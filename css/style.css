@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+body {
+    background-image: url("../img/shubham-dhage-MpL4w1vb798-unsplash.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    font-family: 'Poiret One', cursive;
+    /* Photo by Shubham Dhage on Unsplash.com */
+}
+
+#triangleA,
+#triangleB,
+#triangleC {
+    /* height: 25vw; */
+    width: 25vw;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    text-align: center;
+    padding-top: 15vw;
+    font-size: 3vw;
+    background-color: transparent;
+    color: white;
+    overflow: hidden;
+    border-bottom: 4px solid rgb(159, 159, 185);
+  }
+
+  #triangleA:focus,
+  #triangleB:focus,
+  #triangleC:focus {
+    border-bottom: 4px solid aqua;
+    box-shadow: 0 -30px 30px rgba(255, 255, 255, 0.3) inset; 
+	-webkit-box-shadow: 0 -30px 30px rgba(255, 255, 255, 0.3) inset; 
+	-moz-box-shadow: 0 -30px 30px rgba(255, 255, 255, 0.3) inset; 
+}
+
+label {
+    color:white;
+    font-size: 2vw;
+}
